@@ -1,4 +1,4 @@
-# StreamHttpResponse 데모
+# StreamingHttpResponse 데모
 
 ## 실행
 1. django 설치
