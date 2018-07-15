@@ -30,7 +30,11 @@ class FileWrapper(object):
 
     def __iter__(self):
         return self
-
+    
+    def close(self):
+        if hasattr(self.file, 'close'):
+            self.file.close()
+            
     def __next__(self):
         if self.length is None:
             data = self.file.read()
